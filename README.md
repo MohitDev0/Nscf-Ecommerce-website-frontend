@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+Link : https://nscf-ecommerce.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nscf Ecommerce website
+# Overview
+  Basically this is a Ecommerce website which is build in Mern stack.
+  
+# Demo
+Admin:
+Username:  mohitsn0003@gmail.com
+Password: mohit@123
 
-## Available Scripts
+Normal User:
+Username: redakgaming@gmail.com
+Password: redak123
 
-In the project directory, you can run:
+# Features
 
-### `npm start`
+# Admin Features
+  # Add New Product:
+    Admin users can add new products to the inventory.
+  # Update Product:
+    Admin users can update existing product details.
+  # Delete Product:
+    Admin users have the ability to delete products from the inventory.
+  # Add New Feature:
+    Admin users can add new features.
+  # Update Feature:
+    Admin users can update existing features.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Normal User Features
+ # Add Comment:
+    Normal users can add comments to product pages.
+ # Edit Comment:
+    Normal users have the ability to edit their own comments.
+# Delete Comment:
+    Normal users can delete their own comments.
+# Add to Cart:
+    Normal users can add products to their shopping cart.
+# View Cart:
+    Normal users can view the contents of their shopping cart.
+# Checkout:
+    Normal users can proceed to checkout and complete the purchase.
+    
+# Technologies Used
+  List the technologies and frameworks used in building your website.
+    MongoDB
+    Express.js
+    React
+    Node.js
+    
+# Clone the repository
+  FrontEnd - https://github.com/MohitDev0/Nscf-Ecommerce-website-frontend
+  BackEnd  - https://github.com/MohitDev0/Nscf-Ecommerce-website-backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Change directory
+  cd client
+  cd Api
+# Install dependencies
+npm install
 
-### `npm test`
+# Run the development server
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
