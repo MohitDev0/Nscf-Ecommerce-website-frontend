@@ -16,29 +16,29 @@ Password: redak123
 # Features
 
 # Admin Features
-  # Add New Product:
+  1. Add New Product:
     Admin users can add new products to the inventory.
-  # Update Product:
+  2. Update Product:
     Admin users can update existing product details.
-  # Delete Product:
+  3. Delete Product:
     Admin users have the ability to delete products from the inventory.
-  # Add New Feature:
+  4. Add New Feature:
     Admin users can add new features.
-  # Update Feature:
+  5. Update Feature:
     Admin users can update existing features.
 
 # Normal User Features
- # Add Comment:
+ 1. Add Comment:
     Normal users can add comments to product pages.
- # Edit Comment:
+ 2. Edit Comment:
     Normal users have the ability to edit their own comments.
-# Delete Comment:
+ 3. Delete Comment:
     Normal users can delete their own comments.
-# Add to Cart:
+ 4. Add to Cart:
     Normal users can add products to their shopping cart.
-# View Cart:
+ 5. View Cart:
     Normal users can view the contents of their shopping cart.
-# Checkout:
+ 6. Checkout:
     Normal users can proceed to checkout and complete the purchase.
     
 # Technologies Used
