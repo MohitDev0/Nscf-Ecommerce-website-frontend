@@ -9,14 +9,19 @@ import Cart from "./pages/Cart";
 import { Toaster } from "react-hot-toast";
 import {
     createBrowserRouter,
-    Routes,
-    Route,
     Navigate,
     RouterProvider,
 } from "react-router-dom";
 
 const App = () => {
-    const token = localStorage.getItem("jwt");
+    const PrivateRoute = ({ element }) => {
+        const token = localStorage.getItem("jwt");
+        return token ? (
+            element
+        ) : (
+            <Navigate to="/login" replace  />
+        );
+    };
     const router = createBrowserRouter([
         {
             path: "/login",
@@ -24,23 +29,24 @@ const App = () => {
         },
         {
             path: "/",
-            element: token ? <Home /> : <Navigate to="/login" replace />,
+            element: <PrivateRoute element={<Home />} />,
         },
+
         {
             path: "/about",
-            element: token ? <About /> : <Navigate to="/login" replace />,
+            element:<PrivateRoute element={<About />} />,
         },
         {
             path: "/contact",
-            element: token ? <Contact /> : <Navigate to="/login" replace />,
+            element:<PrivateRoute element={<Contact />} />,
         },
         {
             path: "/product",
-            element: token ? <Product /> : <Navigate to="/login" replace />,
+            element:<PrivateRoute element={<Product />} />,
         },
         {
             path: "/cart",
-            element: token ? <Cart /> : <Navigate to="/login" replace />,
+            element: <PrivateRoute element={<Cart />} />,
         }
     ]);
 
