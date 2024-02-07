@@ -1,0 +1,21 @@
+img.slider_image {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+.slider_image {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

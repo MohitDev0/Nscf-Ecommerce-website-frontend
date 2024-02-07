@@ -1,0 +1,31 @@
+.loginpage::before {
+    content: url(../../public/images/loginMaterial.png);
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    zoom: 50%;
+}
+
+.loginpage::after {
+    content: url(../../public/images/loginMaterial.png);
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    transform: rotate(180deg);
+    zoom: 50%;
+}
+
+.loginpage {
+    position: relative;
+    height: 100%;
+}
+
+.loginLeft {
+    background-image: url(../../public/images/login1.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 100%;
+}
+
+body {
+    position: relative;
+}

@@ -1,0 +1,17 @@
+.addCommentTitle span {
+    white-space: nowrap;
+}
+
+.add_comment {
+    width: 40%;
+}
+
+.addCommentTitle, .addCommentTitle input {
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .add_comment {
+        width: 75%;
+    }
+}

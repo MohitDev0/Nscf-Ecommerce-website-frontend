@@ -1,0 +1,294 @@
+.comments {
+    background-image: url("../../../public/images/commentbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.editComment {
+    position: absolute;
+    top: 0px;
+    right: 54px;
+    padding-top: 9%;
+}
+
+.comments {
+    position: relative;
+}
+
+.editComment span {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.editCommentCard {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+    z-index: 999;
+    overflow: scroll;
+}
+
+.editCommentCard::-webkit-scrollbar {
+    width: 0px;
+}
+
+.show_comment_wrapper {
+    width: 30%;
+}
+
+.editCom_Card {
+    background: #309952;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.commentDeleteIcon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 9;
+}
+
+h1.editCom_card_name {
+    color: white;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.edit_comment_card_container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.editCom_card_desc {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.editCom_Card:hover {
+    background: #3bbb65;
+}
+
+.comment_edit_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Edit_comment_form_container {
+    z-index: 12;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: whitesmoke;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    animation: popup 0.3s;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.comment_edit_form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #656565;
+    width: 500px;
+}
+
+.comment_edit_form input {
+    height: 40px;
+    background: #e0e0e04f;
+    ;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px;
+}
+
+.comment_edit_form textarea {
+    background: #e0e0e04f;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px;
+}
+
+.comment_edit_form input:focus,
+.comment_edit_form textarea:focus {
+    outline: solid 1px #42b9ff;
+}
+
+
+.comment_edit_form label {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+.comment_edit_form .comment_edit_submit {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+}
+
+.comment_edit_submit:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.comment_edit_submit:hover {
+    background-color: #2c974b;
+}
+
+.comment_edit_submit:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.comment_edit_submit:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.comment_edit_submit:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.comment, .commentUser, .commentUserImg {
+    text-transform: capitalize;
+    animation: fadeUp 0.8s;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.addCommentName, .addCommentdesc {
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.addCommentdesc {
+    width: 100%;
+}
+
+.addCommentName:focus, .addCommentdesc:focus {
+    border: 1px solid #66a2ff;
+    outline: solid 1px;
+}
+
+.addCommentTitle {
+    display: flex;
+    align-items: center;
+}
+
+.addCommentName {
+    flex: 1;
+    margin-right: 0px !important;
+}
+
+@media screen and (max-width:800px) {
+    .editComment {
+        top: 10px;
+        right: 17px;
+    }
+
+    .show_comment_wrapper {
+        width: 100%;
+        margin: 0px 20px;
+    }
+
+    .edit_comment_card_container {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .Edit_comment_form_container {
+        place-content: initial;
+    }
+
+    .comment_edit_form {
+        margin: 0px 10px;
+        width: auto;
+        max-width: none;
+    }
+
+    .comment_edit_form textarea, .comment_edit_form input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .editComment {
+        top: 34px;
+        right: 12px;
+    }
+
+
+}

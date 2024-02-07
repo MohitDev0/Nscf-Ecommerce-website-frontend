@@ -1,0 +1,82 @@
+
+.rightslide {
+    animation: motion-blur-right 0.5s;
+}
+.leftslide {
+    animation: motion-blur-left 0.5s ;
+}
+
+@keyframes motion-blur-right {
+    0% {
+        filter: blur(1px);
+        transform: translate(0px, 0px) scale(1, 1.2);
+    }
+
+    15% {
+        filter: blur(2px);
+        transform: translate(15%, 0px) scale(1,1);
+    }
+
+    30% {
+        filter: blur(3px);
+        transform: translate(30%, 0px) scale(1,0.9);
+    }
+
+    45% {
+        filter: blur(4px);
+        transform: translate(45%, 0px) scale(1,0.8);
+    }
+
+    60% {
+        filter: blur(5px);
+        transform: translate(60%, 0px) scale(1,0.9);
+
+    }
+
+    75%{
+        filter: blur(6px);
+        transform: translate(75%, 0px) scale(1,1);
+    }
+    100%{
+        filter: blur(7px);
+        transform: translate(100%, 0px) scale(1,1.2);
+
+    }
+}
+
+@keyframes motion-blur-left {
+    0% {
+        filter: blur(1px);
+        transform: translate(0px, 0px) scale(1, 1.2);
+    }
+
+    15% {
+        filter: blur(2px);
+        transform: translate(-15%, 0px) scale(1,1);
+    }
+
+    30% {
+        filter: blur(3px);
+        transform: translate(-30%, 0px) scale(1,0.9);
+    }
+
+    45% {
+        filter: blur(4px);
+        transform: translate(-45%, 0px) scale(1,0.8);
+    }
+
+    60% {
+        filter: blur(5px);
+        transform: translate(-60%, 0px) scale(1,0.9);
+
+    }
+
+    75%{
+        filter: blur(6px);
+        transform: translate(-75%, 0px) scale(1,1);
+    }
+    100% {
+        filter: blur(7px);
+        transform: translate(-100%, 0px) scale(1,1.2);
+    }
+}
